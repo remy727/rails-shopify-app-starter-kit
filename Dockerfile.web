@@ -1,0 +1,20 @@
+FROM ruby:3.2.2-alpine
+
+ARG SHOPIFY_API_KEY
+ENV SHOPIFY_API_KEY=$SHOPIFY_API_KEY
+
+RUN apk update && apk add nodejs npm git build-base libpq-dev gcompat bash openssl-dev
+WORKDIR /app
+
+COPY web .
+
+RUN cd frontend && npm install
+RUN bundle install
+
+RUN cd frontend && npm run build
+RUN rake build:all
+
+COPY scripts/web.sh /usr/bin/
+RUN chmod +x /usr/bin/web.sh
+
+ENTRYPOINT ["web.sh"]

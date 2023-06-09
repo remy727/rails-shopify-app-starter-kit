@@ -12,8 +12,8 @@
     "info": "shopify app info"
   },
   "dependencies": {
-    "@shopify/app": "3.46.2",
-    "@shopify/cli": "3.46.2"
+    "@shopify/app": "3.46.3",
+    "@shopify/cli": "3.46.3"
   },
   "author": "Remy Wang",
   "private": true,

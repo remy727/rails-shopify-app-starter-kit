@@ -52,7 +52,7 @@ This includes gems like:
 
 ## Installation
 
-1. `git clone https://github.com/remy727/rails-shopify-app-starter-kit.kit`
+1. `git clone git@github.com:remy727/rails-shopify-app-starter-kit.git`
 2. `cd rails-shopify-app-starter-kit`
 3. Install the ruby dependencies:
   ```shell

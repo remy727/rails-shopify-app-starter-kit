@@ -55,16 +55,17 @@ This includes gems like:
 1. `git clone git@github.com:remy727/rails-shopify-app-starter-kit.git your-app-name`
 2. `cd your-app-name`
 3. Install the ruby dependencies:
-  ```shell
-  cd web
-  bundle install
-  ```
+   ```shell
+   cd web
+   bundle install
+   ```
 4. Run the [Rails template](https://guides.rubyonrails.org/rails_application_templates.html) script.
    It will guide you through setting up your database and set up the necessary keys for encrypted credentials.
-  ```shell
-  bin/rails app:template LOCATION=./template.rb
-  ```
+   ```shell
+   bin/rails app:template LOCATION=./template.rb
+   ```
 5. Update `SHOPIFY_API_KEY` in `heroku.yml`.
+
 
 And your Rails app is ready to run! You can now switch back to your app's root folder to continue:
 

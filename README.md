@@ -63,9 +63,8 @@ This includes gems like:
    It will guide you through setting up your database and set up the necessary keys for encrypted credentials.
   ```shell
   bin/rails app:template LOCATION=./template.rb
-
-5. Update `SHOPIFY_API_KEY` in `heroku.yml`.
   ```
+5. Update `SHOPIFY_API_KEY` in `heroku.yml`.
 
 And your Rails app is ready to run! You can now switch back to your app's root folder to continue:
 

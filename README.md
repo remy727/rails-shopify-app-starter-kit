@@ -134,7 +134,7 @@ The following environment variables need to be provided for all apps:
 | `RAILS_MASTER_KEY`         |   Yes   |   Yes    |     string     | Use value from `web/config/master.key` or create a new one. |
 | `RAILS_ENV`                |         |   Yes    | `"production"` |                                                             |
 | `RAILS_SERVE_STATIC_FILES` |         |   Yes    |      `1`       | Tells rails to serve the React app from the public folder.  |
-| `RAILS_LOG_TO_STDOUT`      |         |          |                | Tells rails to print out logs.                              |
+| `RAILS_LOG_TO_STDOUT`      |         |   Yes    |      `1`       | Tells rails to print out logs.                              |
 | `SENTRY_CURRENT_ENV`       |         |          |    string      | Sentry Environment                                          |
 | `SENTRY_DSN`               |         |          |    string      | Sentry DSN                                                  |
 | `SENTRY_TRACES_SAMPLE_RATE`|         |          |    float       | Sentry Sample Rate                                          |

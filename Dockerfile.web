@@ -14,7 +14,9 @@ RUN bundle install
 RUN cd frontend && npm run build
 RUN rake build:all
 
-COPY scripts/web.sh /usr/bin/
+COPY entrypoints/web.sh /usr/bin/
 RUN chmod +x /usr/bin/web.sh
 
 ENTRYPOINT ["web.sh"]
+
+CMD rails server -b 0.0.0.0 -e production

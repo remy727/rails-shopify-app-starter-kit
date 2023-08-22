@@ -7,7 +7,7 @@ COPY web .
 
 RUN bundle install
 
-COPY scripts/worker.sh /usr/bin/
+COPY entrypoints/worker.sh /usr/bin/
 RUN chmod +x /usr/bin/worker.sh
 
 ENTRYPOINT ["worker.sh"]

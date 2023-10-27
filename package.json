@@ -12,14 +12,14 @@
     "info": "shopify app info"
   },
   "dependencies": {
-    "@shopify/app": "3.48.3",
-    "@shopify/cli": "3.48.3"
+    "@shopify/app": "3.50.0",
+    "@shopify/cli": "3.50.0"
   },
   "author": "Remy Wang",
   "private": true,
   "workspaces": [
+    "extensions/*",
     "web",
-    "web/frontend",
-    "extensions/*"
+    "web/frontend"
   ]
 }

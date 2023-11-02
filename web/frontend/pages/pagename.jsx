@@ -38,7 +38,7 @@ export default function PageName() {
             </TextContainer>
           </LegacyCard>
         </Layout.Section>
-        <Layout.Section secondary>
+        <Layout.Section variant="oneThird">
           <LegacyCard sectioned>
             <Text variant="headingMd" as="h2">
               {t("PageName.heading")}

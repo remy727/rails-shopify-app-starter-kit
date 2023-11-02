@@ -29,7 +29,7 @@ export default function HomePage() {
               distribution="trailing"
               alignment="center">
               <LegacyStack.Item fill>
-                <TextContainer spacing={undefined}>
+                <TextContainer spacing='loose'>
                   <Text as="h2" variant="headingMd">
                     {t("HomePage.heading")}
                   </Text>

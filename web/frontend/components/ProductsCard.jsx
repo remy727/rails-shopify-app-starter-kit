@@ -64,7 +64,7 @@ export function ProductsCard() {
           loading: isLoading,
         }}
       >
-        <TextContainer spacing={undefined}>
+        <TextContainer spacing='loose'>
           <p>{t("ProductsCard.description")}</p>
           <Text as="h4" variant="headingMd">
             {t("ProductsCard.totalProductsHeading")}

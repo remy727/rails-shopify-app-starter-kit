@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "e017982822207d879b65474640fcd51a"
-application_url = "https://lights-saving-rain-announcement.trycloudflare.com"
+application_url = "https://connector-electro-preparing-hereby.trycloudflare.com"
 embedded = true
 name = "RemyIT Ruby StarterKit Demo"
 handle = "remyit-ruby-starterkit-demo"
@@ -36,9 +36,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://lights-saving-rain-announcement.trycloudflare.com/auth/callback",
-  "https://lights-saving-rain-announcement.trycloudflare.com/auth/shopify/callback",
-  "https://lights-saving-rain-announcement.trycloudflare.com/api/auth/callback"
+  "https://connector-electro-preparing-hereby.trycloudflare.com/auth/callback",
+  "https://connector-electro-preparing-hereby.trycloudflare.com/auth/shopify/callback",
+  "https://connector-electro-preparing-hereby.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

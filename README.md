@@ -59,39 +59,11 @@ This includes gems like:
    ```shell
    bin/rails app:template LOCATION=./template.rb
    ```
-Optional: If you want to deploy to Heroku, update `SHOPIFY_API_KEY` in `heroku.yml`.
-
-And your Rails app is ready to run! You can now switch back to your app's root folder to continue:
-
-```shell
-cd ..
-```
-
-## Local Development
-
-[The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard.
-It provides environment variables, runs commands in parallel, and updates application URLs for easier development.
-
-You can develop locally using your preferred Node.js package manager.
-Run one of the following commands from the root of your app:
-
-Using yarn:
-
-```shell
-yarn dev
-```
-
-Using npm:
-
-```shell
-npm run dev
-```
-
-Using pnpm:
-
-```shell
-pnpm run dev
-```
+5. Run the app from the root of your app.
+   ```shell
+   cd ..
+   shopify app dev
+   ```
 
 Open the URL generated in your console. Once you grant permission to the app, you can start development.
 
@@ -100,21 +72,22 @@ Open the URL generated in your console. Once you grant permission to the app, yo
 ### Step 1: Set up hosting with Heroku
 1. Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli).
 2. Navigate to your app directory:
-  ```shell
-  cd my-app
-  ```
-3. Log in to the Heroku CLI:
-  ```shell
-  heroku login
-  ```
-4. Log in to the Heroku Container Registry:
-  ```shell
-  heroku container:login
-  ```
-5. Create an app in Heroku:
-  ```shell
-  heroku create -a <my-app-name> -s container
-  ```
+   ```shell
+   cd your-app
+   ```
+3. If you want to deploy to Heroku, update `SHOPIFY_API_KEY` in `heroku.yml`.
+4. Log in to the Heroku CLI:
+   ```shell
+   heroku login
+   ```
+5. Log in to the Heroku Container Registry:
+   ```shell
+   heroku container:login
+   ```
+6. Create an app in Heroku:
+   ```shell
+   heroku create -a <your-app-name> -s container
+   ```
 
 ### Step 2: Add addons
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
@@ -151,7 +124,7 @@ git push heroku main
 - **Allowed redirection URL(s)**: The callback URL for your app. This is usually the same as the app URL, with `/api/auth/callback` appended.
 
 The following are examples of URLs that you might set for Heroku:
-- **App URL**: `https://my-app.herokuapp.com`
-- **Allowed redirection URL(s)**: `https://my-app.herokuapp.com/api/auth/callback`
+- **App URL**: `https://your-app.herokuapp.com`
+- **Allowed redirection URL(s)**: `https://your-app.herokuapp.com/api/auth/callback`
 
 Enjoy your app :)

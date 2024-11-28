@@ -1,36 +1,29 @@
 # Rails Shopify App Starter Kit
 
-The Rails Shopify app with some tools for quick starting developing shopify app.
+The Rails Shopify app starter kit with some tools for quick starting developing shopify app.
+
+## Why do we need separate repo instead of using Shopify's ruby template?
+
+- Shopify's ruby template uses Polaris 12 but this starter kit uses Polaris 13.
+- This starter kit includes some additional gems and configurations.
 
 ## Tech Stack
 
 This template combines a number of third party open source tools:
 
 - BackEnd
-  - [Rails](https://rubyonrails.org/) builds the backend.
+  - Rails
 - FrontEnd
-  - [Vite](https://vitejs.dev/) builds the [React](https://reactjs.org/) frontend.
-  - [React Router](https://reactrouter.com/) is used for routing. We wrap this with file-based routing.
-  - [React Query](https://react-query.tanstack.com/) queries the Admin API.
-  - [`i18next`](https://www.i18next.com/) and related libraries are used to internationalize the frontend.
-    - [`react-i18next`](https://react.i18next.com/) is used for React-specific i18n functionality.
-    - [`i18next-resources-to-backend`](https://github.com/i18next/i18next-resources-to-backend) is used to dynamically load app translations.
-    - [`@formatjs/intl-localematcher`](https://formatjs.io/docs/polyfills/intl-localematcher/) is used to match the user locale with supported app locales.
-    - [`@formatjs/intl-locale`](https://formatjs.io/docs/polyfills/intl-locale) is used as a polyfill for [`Intl.Locale`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale) if necessary.
-    - [`@formatjs/intl-pluralrules`](https://formatjs.io/docs/polyfills/intl-pluralrules) is used as a polyfill for [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules) if necessary.
-- Database: `PostgreSQL`
-- Background Job:
-  - [Sidekiq](https://sidekiq.org/)
-  - [Redis](https://redis.io/)
-
-These third party tools are complemented by Shopify specific tools to ease app development:
-
-- [Shopify API library](https://github.com/Shopify/shopify-api-ruby) adds OAuth to the Rails backend. This lets users install the app and grant scope permissions.
-- [App Bridge](https://shopify.dev/docs/apps/tools/app-bridge) and [App Bridge React](https://shopify.dev/docs/apps/tools/app-bridge/getting-started/using-react) add authentication to API requests in the frontend and renders components outside of the App’s iFrame.
-- [Polaris React](https://polaris.shopify.com/) is a powerful design system and component library that helps developers build high quality, consistent experiences for Shopify merchants.
-- [Custom hooks](https://github.com/Shopify/shopify-frontend-template-react/tree/main/hooks) make authenticated requests to the Admin API.
-- [File-based routing](https://github.com/Shopify/shopify-frontend-template-react/blob/main/Routes.jsx) makes creating new pages easier.
-- [`@shopify/i18next-shopify`](https://github.com/Shopify/i18next-shopify) is a plugin for [`i18next`](https://www.i18next.com/) that allows translation files to follow the same JSON schema used by Shopify [app extensions](https://shopify.dev/docs/apps/checkout/best-practices/localizing-ui-extensions#how-it-works) and [themes](https://shopify.dev/docs/themes/architecture/locales/storefront-locale-files#usage).
+  - Vite
+  - React
+  - React Router
+  - React Query
+  - i18next
+- Database
+  - PostgreSQL
+- Background Job
+  - Sidekiq
+  - Redis
 
 ## Gems
 
@@ -64,8 +57,7 @@ This includes gems like:
    ```shell
    bin/rails app:template LOCATION=./template.rb
    ```
-5. Update `SHOPIFY_API_KEY` in `heroku.yml`.
-
+Optional: If you want to deploy to Heroku, update `SHOPIFY_API_KEY` in `heroku.yml`.
 
 And your Rails app is ready to run! You can now switch back to your app's root folder to continue:
 
@@ -160,4 +152,4 @@ The following are examples of URLs that you might set for Heroku:
 - **App URL**: `https://my-app.herokuapp.com`
 - **Allowed redirection URL(s)**: `https://my-app.herokuapp.com/api/auth/callback`
 
-### Step 5: Enjoy your app :)
+Enjoy your app :)

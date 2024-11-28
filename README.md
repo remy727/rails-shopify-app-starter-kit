@@ -59,9 +59,13 @@ This includes gems like:
    ```shell
    bin/rails app:template LOCATION=./template.rb
    ```
-5. Run the app from the root of your app.
+5. Navigate to the root of your app and connect to Shopify app.
    ```shell
    cd ..
+   shopify app config link
+   ```
+6. Launch the app:
+   ```shell
    shopify app dev
    ```
 

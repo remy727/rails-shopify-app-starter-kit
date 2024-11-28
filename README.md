@@ -5,6 +5,7 @@ The Rails Shopify app starter kit with some tools for quick starting developing 
 ## Why do we need separate repo instead of using Shopify's ruby template?
 
 - Shopify's ruby template uses Polaris 12 but this starter kit uses Polaris 13.
+- Shopify's ruby template uses SQLite but this starter kit uses PostgreSQL.
 - This starter kit includes some additional gems and configurations.
 
 ## Tech Stack

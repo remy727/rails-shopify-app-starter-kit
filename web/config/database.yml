@@ -4,10 +4,10 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 development:
   <<: *default
-  database: shopify_app_development
+  database: rails_shopify_app_starter_kit_development
 test:
   <<: *default
-  database: shopify_app_test
+  database: rails_shopify_app_starter_kit_test
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>

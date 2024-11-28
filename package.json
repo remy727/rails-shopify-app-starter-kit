@@ -1,5 +1,5 @@
 {
-  "name": "shopify-app-template-ruby",
+  "name": "rails-shopify-app-starter-kit",
   "version": "1.0.1",
   "license": "UNLICENSED",
   "scripts": {
@@ -11,10 +11,7 @@
     "deploy": "shopify app deploy",
     "info": "shopify app info"
   },
-  "dependencies": {
-    "@shopify/app": "3.48.2",
-    "@shopify/cli": "3.48.2"
-  },
+  "dependencies": {},
   "author": "Remy Wang",
   "private": true,
   "workspaces": [

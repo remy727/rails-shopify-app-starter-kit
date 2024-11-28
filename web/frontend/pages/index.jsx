@@ -1,10 +1,10 @@
 import {
-  LegacyCard,
+  Card,
   Page,
   Layout,
   TextContainer,
   Image,
-  LegacyStack,
+  Stack,
   Link,
   Text,
 } from "@shopify/polaris";
@@ -19,16 +19,17 @@ export default function HomePage() {
   const { t } = useTranslation();
   return (
     <Page narrowWidth>
-      <TitleBar title={t("HomePage.title")} primaryAction={null} />
+      <TitleBar title={t("HomePage.title")} />
       <Layout>
         <Layout.Section>
-          <LegacyCard sectioned>
-            <LegacyStack
+          <Card sectioned>
+            <Stack
               wrap={false}
               spacing="extraTight"
               distribution="trailing"
-              alignment="center">
-              <LegacyStack.Item fill>
+              alignment="center"
+            >
+              <Stack.Item fill>
                 <TextContainer spacing="loose">
                   <Text as="h2" variant="headingMd">
                     {t("HomePage.heading")}
@@ -70,8 +71,8 @@ export default function HomePage() {
                     />
                   </p>
                 </TextContainer>
-              </LegacyStack.Item>
-              <LegacyStack.Item>
+              </Stack.Item>
+              <Stack.Item>
                 <div style={{ padding: "0 20px" }}>
                   <Image
                     source={trophyImage}
@@ -79,9 +80,9 @@ export default function HomePage() {
                     width={120}
                   />
                 </div>
-              </LegacyStack.Item>
-            </LegacyStack>
-          </LegacyCard>
+              </Stack.Item>
+            </Stack>
+          </Card>
         </Layout.Section>
         <Layout.Section>
           <ProductsCard />

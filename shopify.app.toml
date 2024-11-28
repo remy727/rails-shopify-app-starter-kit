@@ -1,3 +1,45 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "e017982822207d879b65474640fcd51a"
+application_url = "https://thorough-absent-revolution-fires.trycloudflare.com"
+embedded = true
+name = "RemyIT Ruby StarterKit Demo"
+handle = "remyit-ruby-starterkit-demo"
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "remyit-development.myshopify.com"
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/api/webhooks/app_uninstalled"
+
+  [[webhooks.subscriptions]]
+  uri = "/api/webhooks/customers_data_request"
+  compliance_topics = [ "customers/data_request" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/api/webhooks/customers_redact"
+  compliance_topics = [ "customers/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/api/webhooks/shop_redact"
+  compliance_topics = [ "shop/redact" ]
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://thorough-absent-revolution-fires.trycloudflare.com/auth/callback",
+  "https://thorough-absent-revolution-fires.trycloudflare.com/auth/shopify/callback",
+  "https://thorough-absent-revolution-fires.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false

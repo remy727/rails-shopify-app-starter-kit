@@ -49,11 +49,13 @@ This includes gems like:
 
 1. `git clone git@github.com:remy727/rails-shopify-app-starter-kit.git your-app-name`
 2. `cd your-app-name`
-3. Install the ruby dependencies:
+3. Install the dependencies:
    ```shell
+   yarn
    cd web
    bundle install
    ```
+4. Install np
 4. Run the [Rails template](https://guides.rubyonrails.org/rails_application_templates.html) script.
    It will guide you through setting up your database and set up the necessary keys for encrypted credentials.
    ```shell

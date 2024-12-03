@@ -55,7 +55,6 @@ This includes gems like:
    cd web
    bundle install
    ```
-4. Install np
 4. Run the [Rails template](https://guides.rubyonrails.org/rails_application_templates.html) script.
    It will guide you through setting up your database and set up the necessary keys for encrypted credentials.
    ```shell

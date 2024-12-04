@@ -19,20 +19,20 @@ export default function PageName() {
           <BlockStack gap="400">
             <Card>
               <Text variant="headingMd" as="h2">
-              {t("PageName.heading")}
-            </Text>
-            <BlockStack gap="400">
-              <p>{t("PageName.body")}</p>
-            </BlockStack>
-          </Card>
-          <Card>
-            <Text variant="headingMd" as="h2">
-              {t("PageName.heading")}
-            </Text>
-            <BlockStack gap="400">
-              <p>{t("PageName.body")}</p>
-            </BlockStack>
-          </Card>
+                {t("PageName.heading")}
+              </Text>
+              <BlockStack gap="400">
+                <p>{t("PageName.body")}</p>
+              </BlockStack>
+            </Card>
+            <Card>
+              <Text variant="headingMd" as="h2">
+                {t("PageName.heading")}
+              </Text>
+              <BlockStack gap="400">
+                <p>{t("PageName.body")}</p>
+              </BlockStack>
+            </Card>
           </BlockStack>
         </Layout.Section>
         <Layout.Section variant="oneThird">

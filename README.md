@@ -111,7 +111,6 @@ The following environment variables need to be provided for all apps:
 | `SENTRY_DSN`               |         |          |    string      | Sentry DSN                                                  |
 | `SENTRY_TRACES_SAMPLE_RATE`|         |          |    float       | Sentry Sample Rate                                          |
 | `SHOPIFY_API_KEY`          |         |          |    string      | The client ID of the app, retrieved using Shopify CLI.      |
-| `SHOPIFY_API_SCOPES`       |         |          |    string      | The app's access scopes, retrieved using Shopify CLI.       |
 | `SHOPIFY_API_SECRET`       |         |          |    string      | The client secret of the app, retrieved using Shopify CLI.  |
 | `SHOPIFY_APP_NAME`         |         |          |    string      | Shopify App Name                                            |
 

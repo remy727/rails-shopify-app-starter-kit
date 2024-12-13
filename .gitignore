@@ -4,6 +4,8 @@
 .env.*
 !.env.example
 
+/extensions/*/dist
+
 # Ignore shopify files created during app dev
 .shopify/*
 .shopify.lock

@@ -13,7 +13,7 @@ The Rails Shopify app starter kit with some tools for quick starting developing 
 This template combines a number of third party open source tools:
 
 - BackEnd
-  - Ruby: `3.3.6`
+  - Ruby: `3.4.1`
   - Rails: `7.1.3`
 - FrontEnd
   - Vite

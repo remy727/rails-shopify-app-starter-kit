@@ -11,7 +11,9 @@
     "deploy": "shopify app deploy",
     "info": "shopify app info"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@shopify/cli": "^3.59.0"
+  },
   "author": "Remy Wang",
   "private": true,
   "workspaces": [
